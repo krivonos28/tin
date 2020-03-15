@@ -40,7 +40,6 @@ const { wheel, interier: { set } } = car;
 console.log(set);
 
 // дуструктуризация массива
-let red = 254;
 
 const rgb = [255, 200];
 
@@ -49,4 +48,8 @@ console.log(red,green, blue);
 
 // деструктуризация с rest 
 
-const rainbowS
+const rainbow = ['red', 'orange', 'yelow', 'green', 'blue', 'indigo', 'violet'];
+
+let [, orange, yellow, ...otherColors] = rainbow;
+
+console.log(otherColors);
