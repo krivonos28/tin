@@ -27,3 +27,26 @@ const pc = {
 
 const { hdd, cpu: processor, core } = pc;
 console.log(hdd, processor, core);
+
+const car = {
+  wheel: 4,
+  interier: {
+    set: 4,
+  }
+}
+
+const { wheel, interier: { set } } = car;
+
+console.log(set);
+
+// дуструктуризация массива
+let red = 254;
+
+const rgb = [255, 200];
+
+const [red, green, blue = 144] = rgb;
+console.log(red,green, blue);
+
+// деструктуризация с rest 
+
+const rainbowS
