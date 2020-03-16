@@ -48,4 +48,3 @@ for (let k = 0; k < 10 ; k++) {
   }, 1000)
 }
 console.log('-------k', typeof k) // undefined (error)
-console.log('global', globalThis) // undefined (error)

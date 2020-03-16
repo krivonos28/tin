@@ -23,9 +23,7 @@ function showThisWithoutStrictMode () {
       this.getThisArr()
     },
 /**
- *  странное поведение... this — это контекст, в котором определена стрелочная функция
- * вроде как this должен быть равен obj
- * возможно, дело состоит в том, где определяется фукнция
+ * стрелочная функция как метод возварщает global
  */ 
     getThisArr: () => {
       console.log('obj.getThis.Arr', this === global);
