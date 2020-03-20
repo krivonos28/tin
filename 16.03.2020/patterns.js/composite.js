@@ -27,6 +27,9 @@ class Node {
         }
     }
   }
+  cl(){
+    console.log('hey');
+  }
 
   getChild(i) {
     return this.children[i];
@@ -39,8 +42,7 @@ class Node {
 
 
 function traverse(indent, node) {
-  log.add(Array(indent++).join("--") + node.name);
-
+  node.cl();
   for (let i = 0, len = node.children.length; i < len; i++) {
       traverse(indent, node.getChild(i));
   }
@@ -55,10 +57,10 @@ function run() {
   const leftright = new Node("leftright");
   const rightleft = new Node("rightleft");
   const rightright = new Node("rightright");
-
+ 
   tree.add(left);
   tree.add(right);
-  tree.remove(right);  // note: remove
+  tree.remove(right);
   tree.add(right);
 
   left.add(leftleft);
